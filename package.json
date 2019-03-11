@@ -1,0 +1,21 @@
+{
+  "name": "code-rows-count",
+  "version": "1.0.0",
+  "description": "code rows count",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:silenceboychen/code-rows-count.git"
+  },
+  "keywords": [
+    "code",
+    "rows",
+    "line",
+    "statistics"
+  ],
+  "author": "silenceboychen <chenhao_312@126.com>",
+  "license": "ISC"
+}
