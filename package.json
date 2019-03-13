@@ -44,6 +44,7 @@
     "validate-commit-msg": "^2.14.0"
   },
   "dependencies": {
+    "chalk": "^2.4.2",
     "lodash": "^4.17.11"
   }
 }

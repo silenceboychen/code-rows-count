@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const chalk = require('chalk');
 const _ = require('lodash');
 let allCount = 0;
 let fileCount = 0;
@@ -27,7 +28,7 @@ function readFile (filePath, callback) {
                             return true;
                         }
                     });
-                    console.log('文件路径:' + filePath + ', 文件行数:' + arr.length);
+                    console.log('文件路径:' + chalk.blue.underline.bold(filePath) + ', 文件行数:' + chalk.green(arr.length));
                     allCount += arr.length;
                     fileCount++;
                     callback();
@@ -61,6 +62,11 @@ function readDir (filePath, callback) {
 }
 const timeStart = new Date();
 readFile(filePath, function () {
-    console.log('done', new Date() - timeStart);
-    console.log('总文件数:' + fileCount + ', 总代码行数: ' + allCount);
+    console.log('\n\n');
+    console.log('------------------分割线start------------------');
+    console.log('done, 总耗时:', chalk.green(new Date() - timeStart), 'ms');
+    console.log('\n');
+    console.log('总文件数:' + chalk.green(fileCount) + ', 总代码行数: ' + chalk.green(allCount));
+    console.log('------------------分割线end------------------');
+    console.log('\n\n');
 });
