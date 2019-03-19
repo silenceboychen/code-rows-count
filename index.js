@@ -1,14 +1,18 @@
+#! /usr/bin/env node
+
 const program = require('commander');
 const chalk = require('chalk');
-const codeCount = require('./codeCount');
+const path = require('path');
+const codeCount = require('./lib/codeCount');
 
 program
-    .version('1.0.0')
+    .version('1.0.2')
     .option('-p, --filePath [filePath]', '文件路径')
     .option('-i, --ignoreFile [ignoreFile]', '忽略文件')
     .parse(process.argv);
 
-const filePath = program.filePath || '.';
+let filePath = program.filePath || '.';
+filePath = path.resolve(__dirname, filePath);
 const ignoreFile = program.ignoreFile;
 
 const timeStart = new Date();
