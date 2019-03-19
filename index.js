@@ -6,7 +6,7 @@ const path = require('path');
 const codeCount = require('./lib/codeCount');
 
 program
-    .version('1.0.2')
+    .version('1.0.3')
     .option('-p, --filePath [filePath]', '文件路径')
     .option('-i, --ignoreFile [ignoreFile]', '忽略文件')
     .parse(process.argv);

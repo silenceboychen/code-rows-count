@@ -1,6 +1,6 @@
 {
   "name": "code-rows-count",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "code rows count",
   "main": "index.js",
   "scripts": {

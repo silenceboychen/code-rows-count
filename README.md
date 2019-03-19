@@ -37,7 +37,7 @@ Options:
 example:
 
 ```
-$ codeLineCount -p /home/silence/nodejs/test -i node_modules,yarn.lock
+$ codeLineCount -p /home/silence/nodejs/test -i node_modules,yarn.lock,.git,package.json.lock
 
 文件路径:/home/silence/nodejs/test/color.js, 文件行数:19
 文件路径:/home/silence/nodejs/test/commander.js, 文件行数:14
