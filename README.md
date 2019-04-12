@@ -1,6 +1,8 @@
 ## codeLineCount
 
 
+[![NPM](https://nodei.co/npm/code-rows-count.png)](https://nodei.co/npm/code-rows-count/)
+
 一个用来统计项目内代码行数的工具.
 
 ## Installation
